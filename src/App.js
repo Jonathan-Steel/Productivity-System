@@ -1,7 +1,15 @@
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+
 function App() {
   return (
     <div className="App">
-      <h1>Jonathan's Productivity System</h1>
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className="main-content">
+        <Header />
+      </div>
     </div>
   );
 }
