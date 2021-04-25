@@ -1,14 +1,21 @@
-import React from 'react'
+import { FaInbox } from 'react-icons/fa'
+import { FaStar } from 'react-icons/fa'
+import { FaCalendarAlt } from 'react-icons/fa'
+import { FiSunset } from 'react-icons/fi'
+import { FaCheckCircle } from 'react-icons/fa'
 
 const Sidebar = () => {
     return (
         <div>
-            <h3>Inbox</h3>
-            <hr/>
-            <h3>Today</h3>
-            <h3>Upcoming</h3>
-            <h3>Habits</h3>
-            <hr/>
+            <h3><FaInbox /> Inbox</h3>
+            <br></br>
+
+            <h3><FaStar /> Today</h3>
+            <h3><FaCalendarAlt /> Upcoming</h3>
+            <h3><FiSunset /> Someday</h3>
+            <br></br>
+
+            <h3><FaCheckCircle /> Habits</h3>
         </div>
     )
 }
