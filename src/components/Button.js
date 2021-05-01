@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
 
-const Button = ({ text, onClick }) => {
-    return (<button onClick={onClick} className='btn'>{text}</button>)
+const Button = ({ text, onClick, className, icon }) => {
+    return (
+        <button onClick={onClick} className={`${className ? className : 'btn'}`}>{icon && icon} {text}</button>
+    )
 }
 
 Button.propTypes = {
